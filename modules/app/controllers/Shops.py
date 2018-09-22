@@ -8,3 +8,12 @@ from app import app, mongo, flask_bcrypt, jwt
 from app.schemas import validate_shop
 
 ROOT_PATH = os.environ.get('ROOT_PATH')
+
+@app.route('/shop', methods=['GET', 'DELETE', 'PATCH'])
+def shop():
+    
+    if request.method == 'GET':
+        query.request.args
+        data = mongo.db.find_one(query)
+        return jsonify({'ok': True, 'data': data}), 200
+    
