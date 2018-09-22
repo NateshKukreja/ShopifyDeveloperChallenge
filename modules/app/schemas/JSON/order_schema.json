@@ -8,5 +8,5 @@
         }
     },
     "required": ["id", "lineitem"],
-    "additionalProperties": False
+    "additionalProperties": false
 }

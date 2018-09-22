@@ -9,5 +9,5 @@
         }
     },
     "required": ["quantity", "price", "product"],
-    "additionalProperties": False
+    "additionalProperties": false
 }

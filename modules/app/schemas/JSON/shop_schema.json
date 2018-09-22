@@ -13,5 +13,5 @@
         }
     },
     "required": ["id", "name", "products", "orders"],
-    "additionalProperties": False
+    "additionalProperties": false
 }
