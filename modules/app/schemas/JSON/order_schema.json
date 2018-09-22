@@ -1,0 +1,12 @@
+{
+    "type":"object",
+    "properties":{
+        "id": {"type": "number"},
+        "lineitem": {
+            "type": "object",
+            "properties":{"$ref": "line_item_schema.json"}
+        }
+    },
+    "required": ["id", "lineitem"],
+    "additionalProperties": False
+}

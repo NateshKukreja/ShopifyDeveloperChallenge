@@ -1,0 +1,13 @@
+{
+    "type":"object",
+    "properties":{
+        "quantity": {"type": "number"},
+        "price": {"type":"number"},
+        "product": {
+            "type": "object",
+            "properties":{"$ref": "product_schema.json"}
+        }
+    },
+    "required": ["quantity", "price", "product"],
+    "additionalProperties": False
+}
