@@ -1,30 +1,17 @@
 from flask import Flask
 import pymongo
-
+from flask_pymongo import PyMongo
 
 app = Flask(__name__)
+app.config["MONGO_URI"] = "mongodb://localhost:27017/myDatabase"
+mongo = PyMongo(app)
 
 @app.route('/')
-def hello_world():
+def home_page():
     return 'Hello, World!'
 
-@app.route('/')
-def return_world():
-    return 'heeeeeeeelloo'
-
-def populateDB():
+def init_db():
     myclient = pymongo.MongoClient("mongodb://localhost:27017/")
     mydb = myclient["mydatabase"]
     mycol = mydb["customers"]
-    
-def populateShops():
-    return
-
-def populateOrders():
-    return
-
-def populateProducts():
-    return
-
-def populateLineItems():
-    return
+    return mycol
