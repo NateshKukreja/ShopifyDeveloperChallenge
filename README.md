@@ -1,6 +1,7 @@
 # ShopifyDeveloperChallenge
 
 This is a Python App running Flask
+
 **Documentation**
 1. Shops
 * URL
