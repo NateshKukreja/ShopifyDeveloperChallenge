@@ -107,6 +107,7 @@ This is a Python App running Flask
 To-do:
 * Add documentation for Orders, Products and Line
 * Figure out why Auth doesn't work for POST
+* Implement MongoDB
 * Add PUT methods
 * Integrate jsonschema/GraphQL
 * Deploy to cloud and integrate Kubernetes 
