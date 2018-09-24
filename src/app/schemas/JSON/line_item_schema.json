@@ -1,0 +1,10 @@
+{
+    "type":"object",
+    "properties":{
+        "id": {"type": "number"},
+        "quantity": {"type": "number"},
+        "price": {"type":"number"},
+    },
+    "required": ["quantity", "price", "product"],
+    "additionalProperties": false
+}
