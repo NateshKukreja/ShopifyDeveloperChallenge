@@ -3,6 +3,11 @@
 This is a Python App running Flask
 
 **Documentation**
+
+*Basic Authentication*
+* The app requires authentication for all GET methods
+* When making a request, after `curl` add, `-u Natesh:isGreat` to grant access to API calls, otherwise 401 error will appear
+
 1. Shops
 * URL
   * `/api/v1.0/shops`
@@ -98,3 +103,10 @@ This is a Python App running Flask
 	"orders": []
 	}
 ]
+
+To-do:
+* Add documentation for Orders, Products and Line
+* Figure out why Auth doesn't work for POST
+* Add PUT methods
+* Integrate jsonschema/GraphQL
+* Deploy to cloud and integrate Kubernetes 
