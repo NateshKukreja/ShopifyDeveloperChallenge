@@ -43,10 +43,12 @@ def create_product():
     return json.dumps(data["products"], indent=2), 200 
     
 @app.route('/api/v1.0/line', methods=['GET'])
+@auth.login_required
 def get_line():
     return json.dumps(data["line"], indent=2), 200
 
 @app.route('/api/v1.0/orders', methods=['GET'])
+@auth.login_required
 def get_orders():
     return json.dumps(data["orders"], indent=2), 200
 
@@ -69,6 +71,7 @@ def create_order():
 
     
 @app.route('/api/v1.0/shops', methods=['GET'])
+@auth.login_required
 def get_shops():
     return json.dumps(data["shops"], indent=2), 200
 
